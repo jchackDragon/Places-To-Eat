@@ -21,21 +21,36 @@ class SearchLocationViewController:UIViewController{
     @IBOutlet weak var findLocationButton: UIButton!
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var navigationBar: UINavigationBar!
-    let baseColor = UIColor(colorLiteralRed: 0.15, green: 0.46, blue: 0.94, alpha: 1)
+
     @IBOutlet weak var locationTextField: UITextField!
     var urlTextField:UITextField? = nil
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
+    let baseColor = UIColor.purple//UIColor(colorLiteralRed: 0.15, green: 0.46, blue: 0.94, alpha: 1)
+    var grayColor:UIColor!
+    
+    var appDelegate:AppDelegate!
+    var currentLocation:CLLocationCoordinate2D? = nil
+    
     override func viewDidLoad() {
         locationTextField.delegate = self
+       setGrayAppearance()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        appDelegate = UIApplication.shared.delegate as! AppDelegate
+    }
 
     @IBAction func cancel(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
     @IBAction func findLocation(_ sender: Any) {
+        
+        guard appDelegate.isNetworkAvailable else{
+            FQClient.sharedInstance().showNetworkError(controller: self)
+            return
+        }
         
         guard let locationString = locationTextField.text, !locationString.isEmpty else{
             setTextFieldError(textField: locationTextField)
@@ -52,7 +67,7 @@ class SearchLocationViewController:UIViewController{
                     performUIUpdateOnMain {
                         self.activityIndicator.stopAnimating()
                         self.setUIEnable(enable: true)
-                        self.setBlueAparience()
+                        self.setPurpleAppearance()
                         self.addMapViewWithPlaceMark(placeMark: placeMark!)
                     }
                    
@@ -83,8 +98,9 @@ class SearchLocationViewController:UIViewController{
         view?.frame = mapFrame
 
         let map = view?.subviews[0] as? MKMapView
+        currentLocation = placeMark.location!.coordinate
         let annotation = MKPointAnnotation()
-        annotation.coordinate = placeMark.location!.coordinate
+        annotation.coordinate = currentLocation! //placeMark.location?.coordinate!
         annotation.title = placeMark.name
         map?.addAnnotation(annotation)
         
@@ -104,6 +120,9 @@ class SearchLocationViewController:UIViewController{
             return
         }
         
+        if let location = currentLocation {
+            FQClient.sharedInstance().searchLocation = location
+        }
     }
     
   
@@ -116,12 +135,17 @@ extension SearchLocationViewController: UITextFieldDelegate{
             textField.rightView = nil
     }
     
+    func setGrayAppearance(){
+        grayColor = self.containerView.backgroundColor
+        self.navigationBar.barTintColor = grayColor
+    }
+    
     func setUIEnable(enable:Bool){
         self.findLocationButton.isEnabled = enable
         self.findLocationButton.alpha = enable ? 1 : 0.5
     }
     
-    func setBlueAparience(){
+    func setPurpleAppearance(){
         hideViews()
         setNavigationBarColor()
         addUrlTextFiel()
@@ -150,6 +174,10 @@ extension SearchLocationViewController: UITextFieldDelegate{
         urlTextField!.placeholder = "Add a new URL"
         urlTextField!.textAlignment = .center
         urlTextField!.font = UIFont(name: "System", size: 20)
+        
+        let attribute = NSAttributedString(string: "Add a new URL", attributes: [NSForegroundColorAttributeName:UIColor.white])
+        urlTextField?.attributedPlaceholder = attribute
+        
         self.containerView.backgroundColor = baseColor
         self.containerView.addSubview(urlTextField!)
     }

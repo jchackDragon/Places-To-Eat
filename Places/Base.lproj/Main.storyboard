@@ -23,27 +23,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVv-eu-Me3">
-                                <rect key="frame" x="45" y="405" width="321" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="0.67722602739726023" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDz-vD-YUW" customClass="BorderedButton" customModule="Places" customModuleProvider="target">
-                                <rect key="frame" x="121" y="262" width="169" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Foursquare"/>
-                                <connections>
-                                    <action selector="loginWithSafariViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BDc-5I-RrV"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="lbw-gF-Zlr">
-                                <rect key="frame" x="121" y="117" width="173" height="93"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="gxq-rm-vKq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="i7a-W6-Oiq">
+                                <rect key="frame" x="57" y="187.00000000000003" width="300" height="233.66666666666671"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="lbw-gF-Zlr">
+                                        <rect key="frame" x="75" y="0.0" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="BBx-Es-AOm"/>
+                                            <constraint firstAttribute="width" constant="150" id="age-xx-TIc"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDz-vD-YUW">
+                                        <rect key="frame" x="25" y="160" width="250" height="48"/>
+                                        <color key="backgroundColor" red="0.030341193079948425" green="0.19625315070152283" blue="0.63700836896896362" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="eFf-Wv-s6E"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <state key="normal" title="oursquare" image="flogo"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginWithSafariViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BDc-5I-RrV"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVv-eu-Me3">
+                                        <rect key="frame" x="148" y="218" width="4" height="15.666666666666686"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="0.67722602739726023" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Gy7-dO-HCB"/>
+                                    <constraint firstItem="iVv-eu-Me3" firstAttribute="top" secondItem="dDz-vD-YUW" secondAttribute="bottom" constant="10" id="SmI-hK-T6D"/>
+                                    <constraint firstItem="dDz-vD-YUW" firstAttribute="top" secondItem="lbw-gF-Zlr" secondAttribute="bottom" constant="10" id="wbq-vP-Coh"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" cyan="0.46302488446235657" magenta="0.30682304004828137" yellow="0.40814618021249771" black="0.2150042808219178" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="i7a-W6-Oiq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AeO-he-A0R"/>
+                            <constraint firstItem="gxq-rm-vKq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="R0z-C1-DU3"/>
+                            <constraint firstItem="gxq-rm-vKq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Tpo-7y-tPa"/>
+                            <constraint firstItem="i7a-W6-Oiq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b4z-yA-oM1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gxq-rm-vKq" secondAttribute="bottom" id="i9b-eg-gds"/>
+                            <constraint firstAttribute="trailing" secondItem="gxq-rm-vKq" secondAttribute="trailing" id="lNM-xG-h74"/>
+                            <constraint firstItem="i7a-W6-Oiq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="167" id="moC-am-OQo"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="lableError" destination="iVv-eu-Me3" id="exa-gc-PVp"/>
@@ -60,6 +91,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="KI9-kZ-ADT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.59802794456481934" green="0.1305583119392395" blue="0.71802109479904175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="gPS-lb-rIA" kind="relationship" relationship="rootViewController" id="Kb6-kw-6Ly"/>
@@ -82,12 +117,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yGh-A9-vJT">
-                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                                <rect key="frame" x="0.0" y="108" width="414" height="579"/>
                             </mapView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="c1n-kQ-tXF">
                                 <rect key="frame" x="188.66666666666666" y="349.66666666666669" width="37" height="37"/>
                                 <color key="color" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
+                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="What you loking for" showsSearchResultsButton="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFD-wA-UFw">
+                                <rect key="frame" x="0.0" y="64" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="0.6571815013885498" green="0.26695394515991211" blue="0.76437276601791382" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="yes" keyboardAppearance="light"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -96,7 +137,7 @@
                             <constraint firstItem="yGh-A9-vJT" firstAttribute="leading" secondItem="uAo-mi-1jH" secondAttribute="leading" id="cu9-yw-JEA"/>
                             <constraint firstItem="A62-GV-jJ1" firstAttribute="top" secondItem="yGh-A9-vJT" secondAttribute="bottom" id="g3p-vS-65w"/>
                             <constraint firstItem="c1n-kQ-tXF" firstAttribute="centerX" secondItem="uAo-mi-1jH" secondAttribute="centerX" id="qhv-NF-ncK"/>
-                            <constraint firstItem="yGh-A9-vJT" firstAttribute="top" secondItem="ce4-8r-qwV" secondAttribute="bottom" id="s9X-p3-5v8"/>
+                            <constraint firstItem="yGh-A9-vJT" firstAttribute="top" secondItem="ce4-8r-qwV" secondAttribute="bottom" constant="44" id="s9X-p3-5v8"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" image="selectedMap" selectedImage="map" id="zzM-pl-A7P"/>
@@ -107,7 +148,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hhR-cv-tla" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2285.5999999999999" y="-349.47526236881561"/>
+            <point key="canvasLocation" x="2285.507246376812" y="-349.72826086956525"/>
         </scene>
         <!--Search Location View Controller-->
         <scene sceneID="gWS-Nc-uf9">
@@ -134,6 +175,7 @@
                                         <items>
                                             <navigationItem id="f9s-93-w9V">
                                                 <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="50i-3R-3fC">
+                                                    <color key="tintColor" red="0.25522860884666443" green="0.42828044295310974" blue="0.56463760137557983" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <connections>
                                                         <action selector="cancel:" destination="l4j-rF-DWP" id="ITR-X9-vN8"/>
                                                     </connections>
@@ -141,7 +183,7 @@
                                             </navigationItem>
                                         </items>
                                     </navigationBar>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="studying" textAlignment="center" lineBreakMode="clip" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Gy-nG-7AA">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="locking for" textAlignment="center" lineBreakMode="clip" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Gy-nG-7AA">
                                         <rect key="frame" x="60" y="105" width="294" height="29"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                         <color key="textColor" red="0.31764364242553711" green="0.53736186027526855" blue="0.70456260442733765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -194,6 +236,11 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Rl-qE-cyq">
                                 <rect key="frame" x="125" y="681" width="164" height="35"/>
@@ -295,10 +342,16 @@
             <objects>
                 <tabBarController id="gPS-lb-rIA" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Places" id="KHk-Hj-TJb">
-                        <barButtonItem key="leftBarButtonItem" tag="1" title="Logout" id="L05-Og-qco"/>
+                        <barButtonItem key="leftBarButtonItem" tag="1" title="Logout" id="L05-Og-qco">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
                         <rightBarButtonItems>
-                            <barButtonItem tag="3" systemItem="refresh" id="cgo-yZ-PAB"/>
-                            <barButtonItem tag="2" image="pin" id="KG9-HI-E57"/>
+                            <barButtonItem tag="3" systemItem="refresh" id="cgo-yZ-PAB">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </barButtonItem>
+                            <barButtonItem tag="2" image="pin" id="KG9-HI-E57">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="TcT-vQ-mQU">
@@ -351,6 +404,8 @@
     </scenes>
     <resources>
         <image name="Logo" width="256" height="256"/>
+        <image name="background" width="1360" height="1360"/>
+        <image name="flogo" width="48" height="48"/>
         <image name="list" width="32" height="32"/>
         <image name="map" width="32" height="32"/>
         <image name="pin" width="32" height="32"/>

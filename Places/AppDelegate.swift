@@ -18,7 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+       
+       // UINavigationBar.appearance().barTintColor = UIColor.purple
+        UIApplication.shared.statusBarStyle = .lightContent
         
+        
+        //Ading network observer
         NotificationCenter.default.addObserver(self, selector: #selector(checkReachability), name: NSNotification.Name.reachabilityChanged, object: nil)
         
         reachability = Reachability.forInternetConnection()
