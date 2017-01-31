@@ -12,10 +12,21 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var venues = [FQVenue]()
+    var isNetworkAvailable:Bool = true
+    var reachability:Reachability?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(checkReachability), name: NSNotification.Name.reachabilityChanged, object: nil)
+        
+        reachability = Reachability.forInternetConnection()
+        reachability?.startNotifier()
+        
+        updateConnetionStatus(reachability: reachability!)
+        
+        
         return true
     }
 
@@ -40,7 +51,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+    
+    func checkReachability(notification: Notification){
+        if let reachability = notification.object as? Reachability{
+            self.updateConnetionStatus(reachability: reachability)
+        }
+    }
+    
+    func updateConnetionStatus(reachability:Reachability){
+        
+        let status = reachability.currentReachabilityStatus()
+        self.isNetworkAvailable = (status != NotReachable)
+    }
 
 }
 

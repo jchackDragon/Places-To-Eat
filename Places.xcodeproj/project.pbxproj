@@ -7,13 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E806A9011E3A34B80083F4D1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E806A9001E3A34B80083F4D1 /* MapKit.framework */; };
+		E807DDFA1E3B8D220050D724 /* Tags.swift in Sources */ = {isa = PBXBuildFile; fileRef = E807DDF91E3B8D220050D724 /* Tags.swift */; };
+		E838BF4F1E3CFC4F00FB18FE /* MapNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = E838BF4E1E3CFC4F00FB18FE /* MapNib.xib */; };
+		E84066D91E3CC43800B13BE6 /* SearchLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84066D81E3CC43800B13BE6 /* SearchLocationViewController.swift */; };
+		E843B1BB1E3F832800B62E11 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E843B1BA1E3F832800B62E11 /* Reachability.m */; };
+		E87288FA1E3E657000601E2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E87288F91E3E657000601E2D /* Assets.xcassets */; };
+		E892127C1E378C0D0075A2F5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E892127B1E378C0D0075A2F5 /* MapViewController.swift */; };
+		E892127F1E37A18B0075A2F5 /* GCDBlackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E892127E1E37A18B0075A2F5 /* GCDBlackBox.swift */; };
+		E8A905B31E2A56AD0065EBD7 /* FQConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A905B21E2A56AD0065EBD7 /* FQConstants.swift */; };
+		E8AF77EA1E3FB2C2006C7E11 /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AF77E91E3FB2C2006C7E11 /* BorderButton.swift */; };
 		E8BF7D8F1E2A19AB0074B392 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF7D8E1E2A19AB0074B392 /* AppDelegate.swift */; };
-		E8BF7D911E2A19AB0074B392 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF7D901E2A19AB0074B392 /* ViewController.swift */; };
+		E8BF7D911E2A19AB0074B392 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF7D901E2A19AB0074B392 /* LoginViewController.swift */; };
 		E8BF7D941E2A19AB0074B392 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8BF7D921E2A19AB0074B392 /* Main.storyboard */; };
-		E8BF7D961E2A19AB0074B392 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8BF7D951E2A19AB0074B392 /* Assets.xcassets */; };
 		E8BF7D991E2A19AB0074B392 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8BF7D971E2A19AB0074B392 /* LaunchScreen.storyboard */; };
 		E8BF7DA41E2A19AB0074B392 /* PlacesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF7DA31E2A19AB0074B392 /* PlacesTests.swift */; };
 		E8BF7DAF1E2A19AC0074B392 /* PlacesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF7DAE1E2A19AC0074B392 /* PlacesUITests.swift */; };
+		E8BF7DC31E2A22C70074B392 /* FQClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF7DC21E2A22C70074B392 /* FQClient.swift */; };
+		E8D399781E2B6E2400A179E1 /* FQConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D399771E2B6E2400A179E1 /* FQConvenience.swift */; };
+		E8D3997A1E2B76E800A179E1 /* FQVenue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D399791E2B76E800A179E1 /* FQVenue.swift */; };
+		E8EA90CC1E33D6A300922659 /* OauthViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA90CB1E33D6A300922659 /* OauthViewcontroller.swift */; };
+		E8EA90D01E33E4A200922659 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA90CF1E33E4A200922659 /* URLExtension.swift */; };
+		E8ED20601E3A69680035E413 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ED205F1E3A69680035E413 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,11 +49,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E806A9001E3A34B80083F4D1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E807DDF91E3B8D220050D724 /* Tags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tags.swift; sourceTree = "<group>"; };
+		E838BF4E1E3CFC4F00FB18FE /* MapNib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapNib.xib; sourceTree = "<group>"; };
+		E84066D81E3CC43800B13BE6 /* SearchLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchLocationViewController.swift; sourceTree = "<group>"; };
+		E843B1B81E3F832800B62E11 /* Places-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Places-Bridging-Header.h"; sourceTree = "<group>"; };
+		E843B1B91E3F832800B62E11 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		E843B1BA1E3F832800B62E11 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		E87288F91E3E657000601E2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E892127B1E378C0D0075A2F5 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		E892127E1E37A18B0075A2F5 /* GCDBlackBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDBlackBox.swift; sourceTree = "<group>"; };
+		E8A905B21E2A56AD0065EBD7 /* FQConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FQConstants.swift; sourceTree = "<group>"; };
+		E8AF77E91E3FB2C2006C7E11 /* BorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 		E8BF7D8B1E2A19AB0074B392 /* Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Places.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8BF7D8E1E2A19AB0074B392 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E8BF7D901E2A19AB0074B392 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E8BF7D901E2A19AB0074B392 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E8BF7D931E2A19AB0074B392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E8BF7D951E2A19AB0074B392 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8BF7D981E2A19AB0074B392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8BF7D9A1E2A19AB0074B392 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8BF7D9F1E2A19AB0074B392 /* PlacesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlacesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +73,12 @@
 		E8BF7DAA1E2A19AC0074B392 /* PlacesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlacesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8BF7DAE1E2A19AC0074B392 /* PlacesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesUITests.swift; sourceTree = "<group>"; };
 		E8BF7DB01E2A19AC0074B392 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8BF7DC21E2A22C70074B392 /* FQClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FQClient.swift; sourceTree = "<group>"; };
+		E8D399771E2B6E2400A179E1 /* FQConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FQConvenience.swift; sourceTree = "<group>"; };
+		E8D399791E2B76E800A179E1 /* FQVenue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FQVenue.swift; sourceTree = "<group>"; };
+		E8EA90CB1E33D6A300922659 /* OauthViewcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OauthViewcontroller.swift; sourceTree = "<group>"; };
+		E8EA90CF1E33E4A200922659 /* URLExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
+		E8ED205F1E3A69680035E413 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E806A9011E3A34B80083F4D1 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +107,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E806A8FF1E3A34B80083F4D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E806A9001E3A34B80083F4D1 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E807DDF81E3B8D0A0050D724 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				E807DDF91E3B8D220050D724 /* Tags.swift */,
+			);
+			name = Enums;
+			sourceTree = "<group>";
+		};
+		E843B1BC1E3F837800B62E11 /* NetworkReachability */ = {
+			isa = PBXGroup;
+			children = (
+				E843B1B91E3F832800B62E11 /* Reachability.h */,
+				E843B1BA1E3F832800B62E11 /* Reachability.m */,
+			);
+			name = NetworkReachability;
+			sourceTree = "<group>";
+		};
+		E892127D1E37A16B0075A2F5 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E892127E1E37A18B0075A2F5 /* GCDBlackBox.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 		E8BF7D821E2A19AA0074B392 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +147,7 @@
 				E8BF7DA21E2A19AB0074B392 /* PlacesTests */,
 				E8BF7DAD1E2A19AC0074B392 /* PlacesUITests */,
 				E8BF7D8C1E2A19AB0074B392 /* Products */,
+				E806A8FF1E3A34B80083F4D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +164,15 @@
 		E8BF7D8D1E2A19AB0074B392 /* Places */ = {
 			isa = PBXGroup;
 			children = (
+				E8BF7DBF1E2A21D30074B392 /* Model */,
+				E8BF7DBE1E2A21C10074B392 /* View */,
+				E8BF7DBD1E2A1FFF0074B392 /* Controller */,
 				E8BF7D8E1E2A19AB0074B392 /* AppDelegate.swift */,
-				E8BF7D901E2A19AB0074B392 /* ViewController.swift */,
 				E8BF7D921E2A19AB0074B392 /* Main.storyboard */,
-				E8BF7D951E2A19AB0074B392 /* Assets.xcassets */,
 				E8BF7D971E2A19AB0074B392 /* LaunchScreen.storyboard */,
+				E87288F91E3E657000601E2D /* Assets.xcassets */,
 				E8BF7D9A1E2A19AB0074B392 /* Info.plist */,
+				E843B1B81E3F832800B62E11 /* Places-Bridging-Header.h */,
 			);
 			path = Places;
 			sourceTree = "<group>";
@@ -123,6 +193,66 @@
 				E8BF7DB01E2A19AC0074B392 /* Info.plist */,
 			);
 			path = PlacesUITests;
+			sourceTree = "<group>";
+		};
+		E8BF7DBD1E2A1FFF0074B392 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E8BF7D901E2A19AB0074B392 /* LoginViewController.swift */,
+				E892127B1E378C0D0075A2F5 /* MapViewController.swift */,
+				E8ED205F1E3A69680035E413 /* TableViewController.swift */,
+				E84066D81E3CC43800B13BE6 /* SearchLocationViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E8BF7DBE1E2A21C10074B392 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E838BF4E1E3CFC4F00FB18FE /* MapNib.xib */,
+				E8AF77E91E3FB2C2006C7E11 /* BorderButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E8BF7DBF1E2A21D30074B392 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E843B1BC1E3F837800B62E11 /* NetworkReachability */,
+				E807DDF81E3B8D0A0050D724 /* Enums */,
+				E892127D1E37A16B0075A2F5 /* Utilities */,
+				E8EA90CE1E33E48F00922659 /* Extension */,
+				E8BF7DC01E2A21E50074B392 /* Client */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E8BF7DC01E2A21E50074B392 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				E8BF7DC11E2A21F80074B392 /* FQ */,
+			);
+			name = Client;
+			sourceTree = "<group>";
+		};
+		E8BF7DC11E2A21F80074B392 /* FQ */ = {
+			isa = PBXGroup;
+			children = (
+				E8BF7DC21E2A22C70074B392 /* FQClient.swift */,
+				E8A905B21E2A56AD0065EBD7 /* FQConstants.swift */,
+				E8D399771E2B6E2400A179E1 /* FQConvenience.swift */,
+				E8D399791E2B76E800A179E1 /* FQVenue.swift */,
+				E8EA90CB1E33D6A300922659 /* OauthViewcontroller.swift */,
+			);
+			name = FQ;
+			sourceTree = "<group>";
+		};
+		E8EA90CE1E33E48F00922659 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E8EA90CF1E33E4A200922659 /* URLExtension.swift */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +323,13 @@
 				TargetAttributes = {
 					E8BF7D8A1E2A19AA0074B392 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					E8BF7D9E1E2A19AB0074B392 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -233,7 +369,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8BF7D991E2A19AB0074B392 /* LaunchScreen.storyboard in Resources */,
-				E8BF7D961E2A19AB0074B392 /* Assets.xcassets in Resources */,
+				E838BF4F1E3CFC4F00FB18FE /* MapNib.xib in Resources */,
+				E87288FA1E3E657000601E2D /* Assets.xcassets in Resources */,
 				E8BF7D941E2A19AB0074B392 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,7 +396,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8BF7D911E2A19AB0074B392 /* ViewController.swift in Sources */,
+				E892127F1E37A18B0075A2F5 /* GCDBlackBox.swift in Sources */,
+				E8A905B31E2A56AD0065EBD7 /* FQConstants.swift in Sources */,
+				E8D3997A1E2B76E800A179E1 /* FQVenue.swift in Sources */,
+				E8D399781E2B6E2400A179E1 /* FQConvenience.swift in Sources */,
+				E843B1BB1E3F832800B62E11 /* Reachability.m in Sources */,
+				E807DDFA1E3B8D220050D724 /* Tags.swift in Sources */,
+				E8AF77EA1E3FB2C2006C7E11 /* BorderButton.swift in Sources */,
+				E8BF7DC31E2A22C70074B392 /* FQClient.swift in Sources */,
+				E84066D91E3CC43800B13BE6 /* SearchLocationViewController.swift in Sources */,
+				E892127C1E378C0D0075A2F5 /* MapViewController.swift in Sources */,
+				E8ED20601E3A69680035E413 /* TableViewController.swift in Sources */,
+				E8BF7D911E2A19AB0074B392 /* LoginViewController.swift in Sources */,
+				E8EA90D01E33E4A200922659 /* URLExtension.swift in Sources */,
+				E8EA90CC1E33D6A300922659 /* OauthViewcontroller.swift in Sources */,
 				E8BF7D8F1E2A19AB0074B392 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,10 +562,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Places/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bits.Places;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Places/Places-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -424,10 +577,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Places/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bits.Places;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Places/Places-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -505,6 +660,7 @@
 				E8BF7DB51E2A19AC0074B392 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E8BF7DB61E2A19AC0074B392 /* Build configuration list for PBXNativeTarget "PlacesTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +669,7 @@
 				E8BF7DB81E2A19AC0074B392 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E8BF7DB91E2A19AC0074B392 /* Build configuration list for PBXNativeTarget "PlacesUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +678,7 @@
 				E8BF7DBB1E2A19AC0074B392 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
